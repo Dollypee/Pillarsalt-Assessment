@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* src/index.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom styles */
+
+@font-face {
+  font-family: Millik;
+  src: url(assets/fonts/Millik_Regular.otf);
+}
+
+:root {
+
+  /* Colors: */
+
+
+  /* Font/text values */
+  --pillarsalt-font-family-red-hat-display: Red Hat Display;
+  --pillarsalt-font-family-millik: Millik;
+}
+
+body{
+  font-family: "Red Hat Display", sans-serif;
+}
+
+@layer utilities {
+  /* Font Styles*/
+
+  .font-title{
+    font-family: var(--pillarsalt-font-family-millik);
+  }
+
+  .pillarsalt-heading-one {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .pillarsalt-heading-two {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  
+
+  .pillarsalt-heading-two-bold {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .pillarsalt-heading-three {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .pillarsalt-heading-four {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .pillarsalt-heading-five {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .pillarsalt-subtitle-one {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .pillarsalt-subtitle-two {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+
+  .pillarsalt-normal-text-two {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .pillarsalt-normal-text-three {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+
+  /* Color Styles */
+
+
+  .pillarsalt-navbar {
+    background: #F2F2F2 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000005;
+    opacity: 1;
+  }
+
+
+}
+
+
+
+/*Auth Styles*/
+.app-login-container {
+  position: relative;
+  max-width: 700px;
+  /* width: 94%; */
+  margin: 0 auto;
+}
+.app-signup-container {
+  position: relative;
+  max-width: 900px;
+  /* width: 94%; */
+  margin: 0 auto;
+}
+
+.app-login-main-content {
+  background-color: #170077;
+  border-radius: 10px;
+  font-size: 14px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.app-login-content {
+  padding: 35px 35px 20px;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .app-login-content{
+    width: 100%;
+  }
+}
+
+.app-login-header {
+  margin-bottom: 30px;
+}
+
+.app-logo-content {
+  background-color: #FFFFFF;
+  padding: 35px 35px 20px;
+  width: 40%;
+  order: 2;
+}
+@media screen and (max-width: 768px) {
+  .app-logo-content{
+    width: 100%;
+    order: 1;
+  }
+}
+
+/* Section css */
+.section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.visible {
+  opacity: 1;
+}

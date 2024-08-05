@@ -17,7 +17,7 @@ export const baseApi = createApi({
       return headers;
     },
     validateStatus: (response) => {
-      if (response.status === 401) {
+      if ((location.pathname !== "/login") && response.status === 401) {
         window.location.href = '/login'; 
         return false;
       }

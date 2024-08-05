@@ -41,10 +41,8 @@ const ProfileIcon = ({ firstName, lastName }) => {
       <ProfileModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        // userEmail={user?.user?.emailaddress}
-        userEmail={'ogologomamamdmdksdodkodkwdwkfpwdkkkkkkkkkkkkkkkkkkkkkkkkkk'}
+        userEmail={user?.user?.emailaddress}
         userName={user?.user?.firstname}
-        // userImage="path_to_profile_image.jpg"
       />
     </>
   );
